@@ -1,5 +1,7 @@
 require 'json'
 
+# Rack Upload Service Sample App
+# A simple upload service
 class Russa
 
   def call(env)

@@ -5,4 +5,5 @@ gem 'thin'
 
 group :development, :test do
   gem 'rack-test'
+  gem 'rubycritic'
 end
