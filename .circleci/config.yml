@@ -27,6 +27,8 @@ jobs:
         key: russa-{{ checksum "Gemfile.lock" }}
 
       # Bundle install dependencies
+      - run: gem update --system
+      - run: gem install bundler
       - run: bundle install --path vendor/bundle
 
       # Store bundle cache
