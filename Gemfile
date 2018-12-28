@@ -3,7 +3,5 @@ source 'http://rubygems.org'
 gem 'rack'
 gem 'thin'
 
-group :development, :test do
-  gem 'rack-test'
-  gem 'rubycritic'
-end
+gem 'rack-test', group: :test
+gem 'rubycritic', group: :development

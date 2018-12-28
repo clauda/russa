@@ -7,6 +7,8 @@ class RussaTest < Test::Unit::TestCase
 
   def app
     app = Russa.new
+    builder = Rack::Builder.new
+    builder.run app
   end
 
   def test_root_is_ok
