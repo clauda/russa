@@ -1,5 +1,7 @@
 ### RUSSA - Rack Upload Service Sample App
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/161ef1ddde9941e3a8310bd94b069290)](https://app.codacy.com/app/clauda/russa?utm_source=github.com&utm_medium=referral&utm_content=clauda/russa&utm_campaign=Badge_Grade_Dashboard)
+
 Rack-App + Shrine + AWS S3
 
 #### Setup
