@@ -1,25 +1,23 @@
-require 'json'
+require './apps/ping'
+require './apps/upload_service'
 
 # Rack Upload Service Sample App
 # A simple upload service
 class Russa
 
-  def call(env)
-    response = Rack::Response.new
-    response["Content-Type"] = "application/json"
+  def initialize
+    @app = Rack::Builder.new do
+      map '/' do
+        run Ping.new
+      end
 
-    request = Rack::Request.new(env)
-    case request.path
-    when "/"
-      response.write JSON.generate({ hello: 'world' })
-    when "/upload"
-      response.write JSON.generate({ message: 'upload successfully' })
-    else
-      response.status = 404
-      response.write JSON.generate({ message: 'Not found' })
+      map '/upload' do
+        run UploadService.new
+      end
     end
-
-    response.finish
   end
 
+  def call(env)
+    @app.call(env)
+  end
 end
