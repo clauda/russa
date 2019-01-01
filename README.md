@@ -1,5 +1,8 @@
 ### RUSSA - Rack Upload Service Sample App
 
+[![CircleCI](https://circleci.com/gh/clauda/russa.svg?style=svg)](https://circleci.com/gh/clauda/russa)
+
+
 Rack-App + Shrine + AWS S3
 
 #### Setup
@@ -48,4 +51,14 @@ To run tests:
 
 ```sh
 docker run -it --rm -v "$PWD":/app -w /app russa:latest rake
+```
+
+#### Endpoints
+
+The main upload endpoint: `{URL}/upload`
+
+Sample request:
+
+```sh
+curl -X POST -F file=@/test/files/mary.jpg http://localhost:9292/upload
 ```
