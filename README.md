@@ -1,9 +1,8 @@
 ### RUSSA - Rack Upload Service Sample App
 
-[![CircleCI](https://circleci.com/gh/clauda/russa.svg?style=svg)](https://circleci.com/gh/clauda/russa)
+[![CircleCI](https://circleci.com/gh/clauda/russa.svg?style=svg)](https://circleci.com/gh/clauda/russa)  
 
-
-Rack-App + Shrine + AWS S3
+Rack-App + Shrine + AWS S3  
 
 #### Setup
 

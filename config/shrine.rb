@@ -3,8 +3,8 @@ require "shrine/storage/s3"
 
 s3_options = {
   bucket:            "russa-development", # required
-  access_key_id:     ENV['RUSSA_AWS_ACCESS_KEY'], # AKIAJF4HPQZPYQF7AZSA
-  secret_access_key: ENV['RUSSA_AWS_SECRET_ACCESS_KEY'], # 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
+  access_key_id:     ENV['RUSSA_AWS_ACCESS_KEY'],
+  secret_access_key: ENV['RUSSA_AWS_SECRET_ACCESS_KEY'],
   region:            "sa-east-1",
 }
 
