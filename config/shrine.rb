@@ -1,11 +1,14 @@
 require "shrine"
 require "shrine/storage/s3"
 
+RACK_ENV = ENV['RACK_ENV'] || 'development'
+
 s3_options = {
   bucket:            "russa-development", # required
   access_key_id:     ENV['RUSSA_AWS_ACCESS_KEY'],
   secret_access_key: ENV['RUSSA_AWS_SECRET_ACCESS_KEY'],
   region:            "sa-east-1",
+  stub_responses: RACK_ENV == 'test'
 }
 
 Shrine.storages = {

@@ -10,7 +10,6 @@ group :test do
   gem 'rake'
   gem 'rack-test'
   gem 'test-unit'
-  gem 'shrine-memory'
 end
 
 group :development do

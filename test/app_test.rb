@@ -6,7 +6,7 @@ require './app'
 # Russa test suite
 class RussaTest < Test::Unit::TestCase
   include Rack::Test::Methods
-
+  
   def app
     Russa.new
   end

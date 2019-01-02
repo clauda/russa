@@ -10,6 +10,7 @@ jobs:
       - image: circleci/ruby:2.5.3-node-browsers
         environment:
           APP_ENV: test
+          RACK_ENV: test
       
     working_directory: ~/repo
 

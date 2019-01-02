@@ -49,7 +49,7 @@ And the application also will be avaliable on the [http://localhost:9292](http:/
 To run tests: 
 
 ```sh
-docker run -it --rm -v "$PWD":/app -w /app russa:latest rake
+docker run -it --rm -v "$PWD":/app -e "RACK_ENV=test" -w /app russa:latest rake
 ```
 
 #### Endpoints
